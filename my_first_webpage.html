@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>My First Webpage</title>
+<meta charset="UTF-8">
+<meta name="description" content="This is my first HTML page.">
+<meta name="keywords" content="HTML, beginner, web development">
+<meta name="author" content="Roebben Kate-Lynn">
+
+<style>
+/*body style edited*/
+    body { 
+        font-family: "Segoe UI", Arial, sans-serif; 
+        background-color: #f0f2f5; 
+        margin: 0;
+        padding: 20px;
+        color: #333;
+    }
+/*header style edited*/
+    h1 { 
+        color: #4b0082; 
+        text-align: center;
+        text-shadow: 1px 1px 2px rgba(0,0,0,0.2);
+    }
+
+    h2 {
+        color: #8b008b;
+        border-bottom: 2px solid #8b008b;
+        padding-bottom: 5px;
+    }
+/*paragraph style*/
+    p { line-height: 1.5; }
+/*highlighted style edited*/
+    .highlight { 
+        background-color: #fffa9e;
+        padding: 5px;
+        border-radius: 5px;
+    }
+/*link style edited*/
+    a { color: #0066cc; }
+    a:hover { color: #ff6600; }
+
+    ul, ol { 
+        background-color: #fff;
+        padding: 20px;
+        border-radius: 9px;
+        box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+/*table style edited*/
+    table {
+        border-collapse: collapse;
+        width: 100%;
+        margin-top: 10px;
+        background-color: #fff;
+        box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+
+    th {
+        background-color: #4b0082;
+        color: white;
+        padding: 10px;
+    }
+
+    td {
+        border: 1px solid #ddd;
+        padding: 8px;
+    }
+
+    img {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        border-radius: 8px;
+        box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+    }
+/*form style edited*/
+    form {
+        max-width: 400px;  /* Keeps form from being too wide */
+        margin: 0 auto;    /* Centers it */
+        padding: 10px;
+    }
+
+    input, textarea {
+        width: 100%;       /* Makes them all same width */
+        padding: 5px;
+        margin-bottom: 10px;
+        border: 1px solid #ccc;
+    }
+
+</style>
+
+<script>
+    function greet() {
+        alert("Hello! Welcome to my page.");
+    }
+</script>
+</head>
+
+<body onload="greet()">
+
+    <h1>Welcome to My First Webpage</h1>
+
+    <p>This is a <b>bold</b> statement, and here is some <i>italic</i> text.</p>
+    <p class="highlight">This paragraph is highlighted using CSS.</p>
+
+    <h2>My Favorite Fruits</h2>
+    <ul>
+        <li>Mango</li>
+        <li>Pineapple</li>
+        <li>Apple</li>
+    </ul>
+
+    <h2>Steps to Make Tea</h2>
+    <ol>
+        <li>Boil water</li>
+        <li>Add tea leaves or teabag</li>
+        <li>Pour water into a cup</li>
+    </ol>
+
+    <p>Visit <a href="https://whittockconsulting.co.uk/how-to-make-a-cup-of-tea" target="_blank">Example Website</a> for more info.</p>
+
+    <h2>My Favorite Song</h2>
+    <audio controls style="width: 100%; max-width: 700px;">
+        <source src="favorite song.mp3" type="audio/mpeg">
+    </audio>
+
+    <h2>My Favorite Shortfilm</h2>
+    <div style="text-align: center;">
+        <video width="400" height="320" controls>
+            <source src="d4vd - Romantic Homicide_shortmusicfilm.mp4" type="video/mp4">
+        </video>
+    </div>
+
+    <h2>My Favorite Picture</h2>
+    <img src="Screenshot (444).png" alt="A beautiful view" width="500">
+
+    <div style="border:1px solid #ccc; padding:10px; margin-top:10px; background-color:#fff; border-radius:5px;">
+        <p>This is a block container using <span style="color:red;">div</span> and <span style="font-weight:bold;">span</span> elements.</p>
+        <p>This is a  <span style="color:red;">HRS screenshot</span> and it's <span style="font-weight:bold;">scene</span> was very nice.</p>    
+    </div>
+
+    <h2>Class Schedule</h2>
+    <table>
+        <tr>
+            <th>Day</th>
+            <th>Subject</th>
+            <th>Schedule Time</th>
+        </tr>
+        <tr>
+            <td>Monday</td>
+            <td>Lec. Web System and Technologies 1</td>
+            <td>10:00AM - 11:00AM</td>
+        </tr>
+        <tr>
+            <td>Wednesday</td>
+            <td>Lec. Web System and Technologies 1</td>
+            <td>10:00AM - 11:00AM</td>
+        </tr>
+        <tr>
+            <td>Thursday</td>
+            <td>Lab. Web System and Technologies 1</td>
+            <td>1:00PM - 4:00PM</td>
+        </tr>
+    </table>
+
+    <h2>Contact Me</h2>
+    <form>
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name">
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email">
+
+        <label for="message">Message:</label>
+        <textarea id="message" name="message"></textarea>
+
+        <input type="submit" value="Send">
+    </form>
+
+</body>
+</html>
